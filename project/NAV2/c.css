@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5%;
-  background-color: black;
+  background-color: red;
   font-family: var(--poppins);
 }
 .logo {
@@ -147,17 +147,4 @@ body {
   background-image: url(off_3.png);
   background-size: cover;
   background-position: center;
-}
-@media screen and (max-width: 765px) {
-  .links_board {
-    background: #000;
-    width: 250px;
-    height: 70vh;
-    position: absolute;
-    top: 150px;
-    left: -10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
 }
