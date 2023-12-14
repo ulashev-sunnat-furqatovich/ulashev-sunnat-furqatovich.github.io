@@ -20,7 +20,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   gap: 5%;
-  background-color: black;
+  background-color: #000;
   font-family: var(--poppins);
 }
 .logo {
