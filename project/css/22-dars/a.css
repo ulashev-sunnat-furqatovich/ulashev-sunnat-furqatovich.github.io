@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #2148C0;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url('./bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login_box {	
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 45px;
+}
+.login_box label {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 19px;
+	padding: 13px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+.login_box label input {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #fff;
+}
+.login_box label input::placeholder {
+	color: #fff;
+	opacity: 0.9;
+	flex-wrap: 300;
+}
+.login_box input::placeholder {
+	color: white;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 20px; /* 142.857% */
+	text-transform: uppercase;
+}
+button {
+
+	width: 300px;
+	height: 45px;
+	border: none;
+	border-radius: 4px;
+	color: #2148C0;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	box-shadow: 4px 5px 10px -10px #000;
+}
+a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.logo {
+	display: flex;
+	gap: 20px;
+}
+.logo img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 119.386px;
+	height: 97.851px;
+}
+.inputs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.btn {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: right;
+}

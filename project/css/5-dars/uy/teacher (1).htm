@@ -1,0 +1,691 @@
+<script>
+    function log_out() {
+        if (confirm("Chiqishni xohlaysizmi?") === true) {
+            document.location = `functions/log_out.php`;
+        }
+    }
+</script><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javlonbek Amirdinov</title>
+    <link href="assets/img/logo.png" rel="icon">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        * {
+            transition: all 0.4s;
+        }
+
+        .delete_icon {
+            display: none;
+        }
+
+        .delete_hover,
+        .edit_hover {
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .delete_hover:hover,
+        .edit_hover:hover {
+            transform: rotate(10deg) scale(1.2);
+        }
+
+        .m {
+            position: absolute;
+        }
+
+        #scroll_b {
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+
+        <a href="index.php" class="d-flex align-items-center px-4 px-lg-5" style="margin: 10px 0;">
+
+            <img src="assets/img/logo.png" width="50px">
+
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.php" class="nav-item nav-link ">Bosh Sahifa</a>
+
+                <a href="about.php" class="nav-item nav-link active">Biz haqimizda</a>
+
+                <a href="news.php" class="nav-item nav-link ">Yangiliklar</a>
+
+                <a href="courses.php" class="nav-item nav-link ">Kurslar</a>
+
+                <a href="contact.php" class="nav-item nav-link ">Bog'lanish</a>
+
+            </div>
+
+            <a href="login.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Log in <i class="fa fa-arrow-right ms-3"></i></a>
+
+        </div>
+
+    </nav>
+
+    <!-- Navbar End -->        <div style="height: 100px;"></div>
+
+        <div class="container shadow py-4">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-2">
+                    <div class="col border border-2 p-4">
+                        <div class="col-8 d-flex justify-content-center fit" style="margin: 0 auto;" id="width1">
+                            <img src="./assets/teacher_img/img25909.jpg" alt="Javlonbek Amirdinov" class="img-fluid">
+                        </div>
+                        <h4 class="my-3">
+                            Javlonbek Amirdinov                        </h4>
+                        <p>
+                            MAHORAT IT ACADEMY                        </p>
+                        <p>
+                            <b>Bog'lanish:</b> <a href="tel:+998995907022">+998995907022</a>
+                        </p>
+                        <p>
+                            <b>E-mail:</b> <a href="mailto:javlonbekamirdinov@gmail.com">javlonbekamirdinov@gmail.com</a>
+                        </p>
+                        <p>
+                            <b>Telegram:</b> <a href="https://t.me/uzmita">@uzmita</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-2">
+                    <div class="col border border-2 p-4 overflow-hidden position-relative">
+                        <h4 class="text-center">
+                            Kurslar
+                        </h4>
+
+                        <div class="btn-group">
+                                                        <button type="button" id="btn_change" class="btn btn-secondary active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 0">Buxgalteriya 1C</button>
+                                                    </div>
+
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="row carousel-inner" style="min-height: 100px;">
+                                                                <div class="col-12 my-3 courses_box carousel-item active" id="10">
+                                                                        <div class="border border-2 rounded-3 p-3">
+                                        <div class="row flex-column row-gap-sm-0 row-gap-3">
+                                            <div class="col-12 fit " style="z-index: -2;height: 100%" id="width16">
+                                                <img src="assets/courses_img/img21336.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="mt-3 col-12">
+                                                <h4>
+                                                    Kurs nomi: <span id="course_title">Buxgalteriya 1C</span>
+                                                </h4>
+                                                <div id="course_desc" class="">
+                                                    Endi katta xisobotlar qilishda ham muammoga duch kelmaysiz. 1C buxgalteriya kursini 3 oyda professional darajada o'rganish imkoniyatini qo'ldan boy bermang!                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col mt-5">
+                                            <p>
+                                                <b>Kurs narxi:</b> <span id="course_fee">390 000</span> so'm/oy
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-calendar-alt me-2"> 2023-09-28</i>
+                                            </p>
+                                        </div>
+                                                                                    <a href="#" class="btn btn-success">
+                                                KURSGA YOZILISH
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1.8rem" viewBox="0 0 448 512" fill="#fff" class="mb-1">
+                                                    <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/>
+                                                </svg>
+                                            </a>
+                                                                            </div>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <hr>
+            <div class="row column-gap-3 justify-content-center">
+                <div class="h2 my-3 text-center">POSTLAR</div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 m-3 text-decoration-none boxForLimit">
+                        <div class="col-12 t_row position-relative rounded-3 shadow-sm border border-2 text-decoration-none p-3">
+                            <div class="delete_icon" style="position: absolute; right: 5px; top: 5px;">
+                                <div onclick="confirmation(3, 'posts')" id="3" class="delete_hover mb-3 shadow bg-body border border-1 rounded-3 d-flex justify-content-center align-items-center" style="padding: 10px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 448 512" fill="#f00">
+                                        <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                    </svg>
+                                </div>
+                                <div data-bs-toggle="modal" id="3" data-bs-target="#exampleModal5" class="edit_hover shadow bg-body border border-1 rounded-3 d-flex justify-content-center align-items-center edit_btns" style="padding: 10px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" fill="#11ff00">
+                                        <path d="M200-12q-33 0-56.5-23.5T120-92v-560q0-33 23.5-56.5T200-732h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-12H200Zm280-360Zm167-337 57 56-264 264v57h56l265-265 57 56-288 289H360v-170l287-287Zm171 168L647-709l100-100q24-24 57.5-24t56.5 24l56 57q23 23 23 56t-23 56l-99 99Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="position-relative overflow-hidden img-fluid  fit " id="width16">
+                                <img src="./assets/post_img/img82324.png" class="img-fluid" style="width: 100%;">
+                            </div>
+                            <h4 class="mt-3 ttl">
+                                Qabul boshlandi                            </h4>
+                            <p class="d-none desc">1C buxgalteriya kursiga qabul boshlandi
+
+Ushbu kurs o'z ichiga oladi:
+<br>—Korxonani noldan balansgacha olib chiqish
+<br>—Ikki yoqlama yozuv (provodka bilan ishlash)
+<br>—Korxonaning xisob-kitob ishlarini xatosiz va mukammal shakllantirish
+
+Bonus sifatida:
+<br>— Excelda ma'lumotlar bilan ishlash
+<br>— Formulalar, funktsiyalar va hisobotlar
+<br>— Google Sheets bilan tanishish va yana boshqa ko'plab bilimlarga ega bo'lasiz
+
+Kursni muvaffaqiyatli tamomlagan talabalarga sertifikat va ishga joylashish uchun amaliy yordam beriladi.</p>
+                            <p class="pt-4 text-break" id="limit_text">
+                                1C buxgalteriya kursiga qabul boshlandi
+
+Ushbu kurs o'z ichiga oladi:
+<br>—Korxonani noldan balansgacha olib chiqish
+<br>—Ikki yoqlama yozuv (provodka bilan ishlash)
+<br>—Korxonaning xisob-kitob ishlarini xatosiz va mukammal shakllantirish
+
+Bonus sifatida:
+<br>— Excelda ma'lumotlar bilan ishlash
+<br>— Formulalar, funktsiyalar va hisobotlar
+<br>— Google Sheets bilan tanishish va yana boshqa ko'plab bilimlarga ega bo'lasiz
+
+Kursni muvaffaqiyatli tamomlagan talabalarga sertifikat va ishga joylashish uchun amaliy yordam beriladi.                            </p>
+                            <button type="button" style="display: none" id="editLimit" class="p-0 text-primary text-decoration-underline border-0 bg-transparent">ko'proq o'qish</button>
+                            <div class="d-flex align-items-center gap-3 pt-4">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="./assets/img/calendar.svg" alt="" width="25px">
+                                    <span class="h5 m-0">28.09.2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 m-3 text-decoration-none boxForLimit">
+                        <div class="col-12 t_row position-relative rounded-3 shadow-sm border border-2 text-decoration-none p-3">
+                            <div class="delete_icon" style="position: absolute; right: 5px; top: 5px;">
+                                <div onclick="confirmation(4, 'posts')" id="4" class="delete_hover mb-3 shadow bg-body border border-1 rounded-3 d-flex justify-content-center align-items-center" style="padding: 10px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 448 512" fill="#f00">
+                                        <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                    </svg>
+                                </div>
+                                <div data-bs-toggle="modal" id="4" data-bs-target="#exampleModal5" class="edit_hover shadow bg-body border border-1 rounded-3 d-flex justify-content-center align-items-center edit_btns" style="padding: 10px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" fill="#11ff00">
+                                        <path d="M200-12q-33 0-56.5-23.5T120-92v-560q0-33 23.5-56.5T200-732h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-12H200Zm280-360Zm167-337 57 56-264 264v57h56l265-265 57 56-288 289H360v-170l287-287Zm171 168L647-709l100-100q24-24 57.5-24t56.5 24l56 57q23 23 23 56t-23 56l-99 99Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="position-relative overflow-hidden img-fluid  fit " id="width16">
+                                <img src="./assets/post_img/img95707.jpg" class="img-fluid" style="width: 100%;">
+                            </div>
+                            <h4 class="mt-3 ttl">
+                                Mobil dasturlash                            </h4>
+                            <p class="d-none desc"><br>Zamonaviy mobil dasturchi bo'lmoqchimisiz?
+
+<br>Unda Flutterga oid bilimlaringizni oshiring! 
+
+<br>Mobil dasturlashda eng ommabop framework, bu — Flutter. 
+
+<br>Hozirda IT olamida har qanday loyihani tezroq yaratish masalasi birinchi o'rinda turadi. Ushbu texnologiya yordamida siz bitta dasturlash tili va bitta kod bazasi yordamida bir vaqtda ikkita: iOS va Android tizimlariga dasturiy ilovalar yarata olasiz. Bu degani bir o'q bilan ikkita quyonni urasiz.
+
+<br>Flutterdan hozirgi kunda juda ko'plab gigant kompaniyalar o'z ilovalarini ishlab chiqarishda foydalanib kelishmoqda. Google, BMW, eBay, Aliba Group, kabi gigant kompaniyalar o'z faoliyatlari davomida Flutterdan foydalanishadi.
+<br>Siz ham Flutter developer sifatida o'z mobil ilovalaringizni yaratishni xohlaysizmi? Unda  ushbu imkoniyatni Mahorat IT Academy sizga taqdim etadi.</p>
+                            <p class="pt-4 text-break" id="limit_text">
+                                <br>Zamonaviy mobil dasturchi bo'lmoqchimisiz?
+
+<br>Unda Flutterga oid bilimlaringizni oshiring! 
+
+<br>Mobil dasturlashda eng ommabop framework, bu — Flutter. 
+
+<br>Hozirda IT olamida har qanday loyihani tezroq yaratish masalasi birinchi o'rinda turadi. Ushbu texnologiya yordamida siz bitta dasturlash tili va bitta kod bazasi yordamida bir vaqtda ikkita: iOS va Android tizimlariga dasturiy ilovalar yarata olasiz. Bu degani bir o'q bilan ikkita quyonni urasiz.
+
+<br>Flutterdan hozirgi kunda juda ko'plab gigant kompaniyalar o'z ilovalarini ishlab chiqarishda foydalanib kelishmoqda. Google, BMW, eBay, Aliba Group, kabi gigant kompaniyalar o'z faoliyatlari davomida Flutterdan foydalanishadi.
+<br>Siz ham Flutter developer sifatida o'z mobil ilovalaringizni yaratishni xohlaysizmi? Unda  ushbu imkoniyatni Mahorat IT Academy sizga taqdim etadi.                            </p>
+                            <button type="button" style="display: none" id="editLimit" class="p-0 text-primary text-decoration-underline border-0 bg-transparent">ko'proq o'qish</button>
+                            <div class="d-flex align-items-center gap-3 pt-4">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="./assets/img/calendar.svg" alt="" width="25px">
+                                    <span class="h5 m-0">29.09.2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </header>
+
+    <!-- Profilni Tahrirlash -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profilingizni Tahrirlang</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="functions/update_teacher.php?to=teacher" autocomplete="off" enctype="multipart/form-data" method="post" novalidate class="needs-validation">
+                    <div class="modal-body">
+
+                        <div class="form-floating my-3">
+                            <input type="text" name="first_name" value="Javlonbek" id="pass" class="form-control" required>
+                            <label for="pass">ISM</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="text" id="fname" name="last_name" value="Amirdinov" class="form-control" required>
+                            <label for="fname">FAMILYA</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <textarea style="height: 100px;" type="text" name="bio" id="bio" class="form-control" required rows="50">MAHORAT IT ACADEMY</textarea>
+                            <label for="bio">O'ZINGIZ HAQIDA YOZING</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator .</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="text" id="tel" name="phone" value="995907022" class="form-control" required>
+                            <label for="tel">TELEFON RAQAM</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="date" id="birth_date" name="birth_date" value="1995-01-23" class="form-control" required>
+                            <label for="brithy">TUG'ILGAN YIL</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="text" id="address" name="address" value="Samarqand shahar" class="form-control" required>
+                            <label for="address">MANZIL</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="email" id="email" name="email" value="javlonbekamirdinov@gmail.com" class="form-control" required>
+                            <label for="email">email</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="input-group my-3">
+                            <label for="tg_nickname" class="input-group-text">@</label>
+                            <input type="text" id="tg_nickname" minlength="2" value="uzmita" name="tg_nickname" class="form-control p-3" placeholder="telegram nickname" required>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <select name="dir" class="form-select py-3 mb-3" required>
+                            <option value="">Yo'nalishni tanlang</option>
+                            <option value='1' >Frontend</option><option value='2' >Backend</option><option value='3' >Grafik Dizayn</option><option value='4' >Ingliz tili</option><option value='5' >Matematika</option><option value='6' selected>Buxgalteriya</option>                            <div class="invalid-feedback">
+                                Iltimos tanlang
+                            </div>
+                        </select>
+
+                        <div class="form-floating" style="height: 60px;">
+                            <div class="position-absolute btn btn-success">SURATINGIZNI YUKLANG</div>
+                            <input title="Suratingizni yuklang" name="file" data-bs-toggle="tooltip" data-bs-placement="top" style="width: 50%;" type="file" accept="image/png, image/gif, image/jpeg, image/jpg" id="floatingInput" class="form-control position-absolute opacity-0 z-1">
+                            <div class="valid-feedback position-absolute z-1" style="transform: translateY(33px);">Tasdiqlandi.</div>
+                            <div class="invalid-feedback position-absolute z-1" style="transform: translateY(33px);">Iltimos suratni yuklang.</div>
+                        </div>
+                        <!-- <div class="btn btn-secondary my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">POSTNING KO'RINISHI</div> -->
+                    </div>
+                    <div class="col p-4">
+                        <p class="text-danger">
+                            Agar malumotlaringizni o'zgartirsangiz ushbu malumotlarni ham o'zgartirib qo'ying!
+                        </p>
+                        <div class="btn-group">
+                            <div class="btn btn-success" onclick="document.getElementById('save').removeAttribute('disabled');">
+                                TUSHINARLI
+                            </div>
+                            <div class="btn btn-secondary" onclick="alert('Misol uchun agar telefon raqamingizni o\'zgartirsangiz saytdan ham raqamingizni o\'zgartirib qo\'yishingiz kerak.')">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff" width="25px">
+                                    <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn-primary" disabled id="save">SAQLASH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post qo'shish  -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Yangi post yarating</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="functions/create.php?table=posts&to=teacher&folder=post_img" method="post" autocomplete="off" novalidate enctype="multipart/form-data" class="needs-validation">
+                    <div class="modal-body">
+
+                        <div class="form-floating my-3">
+                            <input type="text" id="pass" name="title" class="form-control" required>
+                            <input type="hidden" name="teacher_id" value="7">
+                            <label for="pass">POST SARLAVHASI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <textarea style="height: 100px;" name="description" type="text" id="desc" class="form-control" required rows="50"></textarea>
+                            <label for="desc">POST MATNI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator .</div>
+                        </div>
+
+                        <div class="form-floating mb-5">
+                            <div class="position-absolute btn btn-success">Ma'lumotnoma rasmini yuklang</div>
+                            <input type="file" title="Postga tegishli suratni yuklang" name="file" data-bs-toggle="tooltip" data-bs-placement="top" style="width: 50%;" accept="image/png, image/gif, image/jpeg, image/jpg" id="floatingInput" class="form-control position-absolute opacity-0 z-1"
+                                required>
+                            <div class="valid-feedback position-absolute z-1" style="transform: translateY(33px);">Tasdiqlandi.</div>
+                            <div class="invalid-feedback position-absolute z-1" style="transform: translateY(33px);">Iltimos suratni yuklang.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn-primary">SAQLASH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post yangilash  -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Postni yangilash</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="functions/update.php?table=posts&folder=post_img&to=teacher" enctype="multipart/form-data" method="post" autocomplete="off" novalidate class="needs-validation">
+                    <div class="modal-body">
+
+                        <div class="form-floating my-3">
+                            <input type="hidden" id="post_id" name="post_id" value="">
+                            <input type="text" id="ex5_title" name="title" class="form-control" required>
+                            <label for="ex5_title">POST SARLAVHASI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <textarea style="height: 100px;" name="description" type="text" id="ex5_desc" class="form-control" required rows="50"></textarea>
+                            <label for="ex5_desc">POST MATNI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator .</div>
+                        </div>
+
+                        <div class="form-floating mb-5">
+                            <div class="position-absolute btn btn-success">Ma'lumotnoma rasmini yuklang</div>
+                            <input name="file" title="Postga tegishli suratni yuklang" data-bs-toggle="tooltip" data-bs-placement="top" style="width: 50%;" type="file" accept="image/png, image/gif, image/jpeg, image/jpg" id="floatingInput" class="form-control position-absolute opacity-0 z-1">
+                            <div class="valid-feedback position-absolute z-1" style="transform: translateY(33px);">Tasdiqlandi.</div>
+                            <div class="invalid-feedback position-absolute z-1" style="transform: translateY(33px);">Iltimos suratni yuklang.</div>
+                        </div>
+                        <!-- <div class="btn btn-secondary my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">POSTNING KO'RINISHI</div> -->
+                    </div>
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn-primary">SAQLASH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kursni yangilash  -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Kursni yangilash</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="functions/update.php?table=courses&folder=courses_img&to=teacher" enctype="multipart/form-data" method="post" autocomplete="off" novalidate class="needs-validation">
+                    <div class="modal-body">
+
+                        <div class="form-floating my-3">
+                            <input type="hidden" name="post_id" id="course_id">
+                            <input type="text" id="courseName" name="title" class="form-control" required>
+                            <label for="courseName">KURS NOMI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <textarea type="text" name="description" id="courseDesc" class="form-control" required style="min-height: 120px;"></textarea>
+                            <label for="courseDesc">KURS HAQIDA YOZING</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator .</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="number" id="courseMon" name="fee" class="form-control" required>
+                            <label for="courseMon">KURS NARXI - (so'm/oy)</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating mb-5">
+                            <div class="position-absolute btn btn-success">Kursga tegishli rasmni yuklang</div>
+                            <input name="file" title="Kursga tegishli suratni yuklang" data-bs-toggle="tooltip" data-bs-placement="top" style="width: 50%;" type="file" accept="image/png, image/gif, image/jpeg, image/jpg" id="floatingInput" class="form-control position-absolute opacity-0 z-1">
+                            <div class="valid-feedback position-absolute z-1" style="transform: translateY(33px);">Tasdiqlandi.</div>
+                            <div class="invalid-feedback position-absolute z-1" style="transform: translateY(33px);">Iltimos suratni yuklang.</div>
+                        </div>
+                        <!-- <div class="btn btn-secondary my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">POSTNING KO'RINISHI</div> -->
+                    </div>
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn-primary">SAQLASH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kusr qo'shish  -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Yangi kurs yarating</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="functions/create.php?&table=courses&to=teacher&folder=courses_img" method="post" autocomplete="off" novalidate enctype="multipart/form-data" class="needs-validation">
+                    <div class="modal-body">
+                        <div class="form-floating my-3">
+                            <input type="text" id="courseName" name="title" class="form-control" required>
+                            <label for="courseName">KURS NOMI</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <textarea type="text" name="description" id="courseDesc" class="form-control" required style="min-height: 120px;"></textarea>
+                            <label for="courseDesc">KURS HAQIDA YOZING</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator .</div>
+                            <svg data-bs-toggle="modal" data-bs-target="#exampleModal4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#ccc" width="20px" style="position: absolute; top: 9px; left: 160px; cursor: pointer;">
+                                <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/>
+                            </svg>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="number" id="courseMon" name="fee" class="form-control" required>
+                            <label for="courseMon">KURS NARXI - (so'm/oy)</label>
+                            <div class="valid-feedback">Tasdiqlandi.</div>
+                            <div class="invalid-feedback">Yaroqsiz qator.</div>
+                        </div>
+
+                        <div class="form-floating mb-5">
+                            <div class="position-absolute btn btn-success">Kursga tegishli rasmni yuklang</div>
+                            <input name="file" title="Kursga tegishli suratni yuklang" data-bs-toggle="tooltip" data-bs-placement="top" style="width: 50%;" type="file" accept="image/png, image/gif, image/jpeg, image/jpg" id="floatingInput" class="form-control position-absolute opacity-0 z-1">
+                            <div class="valid-feedback position-absolute z-1" style="transform: translateY(33px);">Tasdiqlandi.</div>
+                            <div class="invalid-feedback position-absolute z-1" style="transform: translateY(33px);">Iltimos suratni yuklang.</div>
+                        </div>
+                    </div>
+
+                    <div class="col p-4">
+                        <p class="text-danger">
+                            Agar kurs malumotlari o'zgarsa ushbu malumotlarni ham o'zgartirib qo'ying!
+                        </p>
+                        <div class="btn-group">
+                            <div class="btn btn-success" onclick="document.getElementById('cBtn').removeAttribute('disabled');">
+                                TUSHINARLI
+                            </div>
+                            <div class="btn btn-secondary" onclick="alert('Misol uchun agar kurs narxi o\'zgarsa saytdan ham  o\'zgartirib qo\'yishingiz kerak.')">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff" width="25px">
+                                    <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn-primary" disabled id="cBtn">SAQLASH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kurs haqida qanday yozish kerak? -->
+
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Kurs haqida qanday yozish kerak?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form autocomplete="off" novalidate class="needs-validation">
+                    <div class="modal-body">
+
+                        <ul>
+                            <li>Kurs qancha davom etishi</li>
+                            <li>Kurada nimalar o'rgatilishi</li>
+                            <li>Kursni tugatgach beriladigan afzalliklar</li>
+                            <li>Kursingizda o'qish uchun nimalar kerakligi (ixtiyoriy)</li>
+                            <li>va hokazo...</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer mt-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff">
+                                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </button>
+                        <!-- <button type="submit" class="btn btn-primary" disabled id="save">SAQLASH</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script2.js"></script>
+    <script src="./assets/js/limit.js"></script>
+    <script>
+        widthG('#width16', 16/9);
+        widthG('#width1', 1/1);
+        const titles = document.querySelectorAll('.ttl'),
+            descriptions = document.querySelectorAll('.desc'),
+            edit_btns = document.querySelectorAll('.edit_btns'),
+            ex5_title = document.getElementById('ex5_title'),
+            ex5_desc = document.getElementById('ex5_desc'),
+            post_id = document.getElementById('post_id');
+
+        const course_name = document.querySelectorAll('#course_title'),
+            course_desc = document.querySelectorAll('#course_desc'),
+            course_fee = document.querySelectorAll('#course_fee'),
+            course_id = document.querySelectorAll('.courses_box'),
+            course_edit_btns = document.querySelectorAll('.edit_btns_course'),
+            inp_course_title = document.getElementById('courseName'),
+            inp_course_desc = document.getElementById('courseDesc'),
+            inp_course_fee = document.getElementById('courseMon'),
+            inp_course_id = document.getElementById('course_id');
+
+        edit_btns.forEach((btn, i) => {
+            btn.addEventListener('click', (e) => {
+                ex5_title.value = titles[i].innerHTML.trim();
+                ex5_desc.innerHTML = descriptions[i].innerHTML.trim();
+                post_id.value = btn.id;
+            })
+        })
+
+        course_edit_btns.forEach((btn, i) => {
+            btn.addEventListener('click', (e) => {
+                inp_course_title.value = course_name[i].innerHTML.trim();
+                inp_course_desc.innerHTML = course_desc[i].innerHTML.trim();
+                inp_course_fee.value = parseInt(course_fee[i].innerHTML.replace(' ', ''));
+                inp_course_id.value = course_id[i].id;
+            })
+        })
+
+        // confirmation
+        function confirmation(id, from) {
+            let text = "O'chirishni xohlaysizmi?";
+            if (confirm(text) == true) {
+                document.location = `functions/delete.php?id=${id}&from=${from}&to=teacher`;
+            }
+        }
+    </script>
+</body>
+
+</html>

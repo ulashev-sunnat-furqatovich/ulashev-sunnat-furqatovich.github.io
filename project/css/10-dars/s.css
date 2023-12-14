@@ -1,0 +1,50 @@
+
+
+.shrift1 {
+	font-size: 45px;
+	background-color:rgba(255, 78, 0, 1);
+/*	font-family: fantasy;*/
+/*font-family: 
+umumiy 5ta
+
+serif
+sans-serif
+momnospace
+fontasy
+*/
+}
+.h1 {
+	font-size: 45px;
+	font-family: monospace;
+}
+.h2 {
+	font-size: 45px;
+	font-family: sans-serif;
+
+}
+.h3 {
+	font-size: 45px;
+	font-family: serif;
+}
+.h4 {
+	font-size: 45px;
+	font-family:fantasy;
+}
+/*global shriftlar oilasi*/
+
+/*@import url("https://fonts.google.com/iconsselected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24")*/
+
+h5 {
+	font-size: 45px;
+	font-family: "Yuji Hentaigana Akebono";
+	  font-variation-settings:
+
+  'FILL' 0,
+
+  'wght' 400,
+
+  'GRAD' 0,
+
+  'opsz' 24
+
+}

@@ -1,0 +1,35 @@
+.btn1 {
+	border-color: blue;
+	padding: 0px 0px 0px 0px;
+	height: 30px;
+	width: 150px;
+	padding-right: 50px;
+	color: white;
+	transition: 0.5s;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 150px -50px;
+	background-color: blue;
+	background-image: url('download.png');
+}
+.btn1:hover {
+	animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-fill-mode: normal;
+    width: 200px;
+    border-radius: 50px;
+    background-repeat: no-repeat;   
+    cursor: pointer;
+}
+
+
+@keyframes hover{
+	0% {
+		background-position: 150px -50px;
+	}
+	100% {
+		background-position: 150px 50px;
+	}	
+}

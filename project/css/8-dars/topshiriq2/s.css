@@ -1,0 +1,98 @@
+h4 {
+	color: white;
+	text-align: center;
+}
+
+
+h4:hover {
+	text-shadow: 
+	100px 0px 1px rgb(200, 0, 0),
+	98px 10px 1px rgb(255,10 ,0),
+	94px 20px 1px rgb(225,70,0),
+	88px 30px 1px rgb(240,160, 0),
+	80px 40px 1px rgb(210,200,0),
+	70px 50px 1px rgb(170,240,0),
+
+	58px 60px 1px rgb(230,250,0),
+	36px 70px 1px rgb(220,255,50),
+	14px 80px 1px rgb(200, 255,100),
+	-2px 90px 1px rgb(170,255, 150),
+	-20px 100px 1px rgb(110, 255, 255),
+	-38px 110px 1px rgb(70, 225, 255),
+	-54px 120px 1px rgb(60, 205, 255),
+	-78px 130px 1px rgb(50, 85, 255),
+	-90px 140px 1px rgb(40, 65, 255),
+	-100px 150px 1px rgb(30, 45, 255),
+	-108px 160px 1px rgb(20, 25, 255),
+	-114px 170px 1px rgb(10,5, 255),
+
+
+	-120px 0px 1px rgb(200, 0, 0),
+	-118px 10px 1px rgb(255,10 ,0),
+	-114px 20px 1px rgb(225,70,0),
+	-108px 30px 1px rgb(240,160, 0),
+	-100px 40px 1px rgb(210,200,0),
+	-90px 50px 1px rgb(170,240,0),
+
+	-78px 60px 1px rgb(230,250,0),
+	-56px 70px 1px rgb(220,255,50),
+	-34px 80px 1px rgb(200, 255,100),
+	-14px 90px 1px rgb(170,255, 150),
+	8px 100px 1px rgb(110, 255, 300),
+	38px 110px 1px rgb(70, 225, 255),
+	54px 120px 1px rgb(60, 205, 255),
+	78px 130px 1px rgb(50, 85, 255),
+	90px 140px 1px rgb(40, 65, 255),
+	100px 150px 1px rgb(30, 45, 255),
+	108px 160px 1px rgb(20, 25, 255),
+	114px 170px 1px rgb(10,5, 255)
+
+
+
+	;
+}
+
+p:hover{
+	text-shadow: 100px 20px 2px black,
+	0 40px  2px black,
+	100px 60px 2px black,
+	0 80px 2px black,
+	100px 100px 2px black,
+	0 120px 2px black,
+	100px 140px 2px black,
+
+
+	200px 0  2px red,
+	300px 20px 2px red,
+	200px 40px 2px red,
+	300px 60px 2px red,
+	200px 80px 2px red,
+	300px 100px 2px red,
+	200px 120px 2px red,
+	300px 140px 2px red,
+
+
+
+	400px 0 2px green,
+	500px 20px 2px green,
+	400px 40px 2px green,
+	500px 60px 2px green,
+	400px 80px 2px green,
+	500px 100px 2px green,
+	400px 120px 2px green,
+	500px 140px 2px green,
+
+
+
+	600px 0  2px blue, 
+	700px 20px 2px blue,
+	600px 40px 2px blue,
+	700px 60px 2px blue,
+	600px 80px 2px blue,
+	700px 100px 2px blue,
+	600px 120px 2px blue,
+	700px 140px 2px blue
+	;
+
+
+}

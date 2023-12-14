@@ -1,0 +1,60 @@
+* {
+	transition: 0.2s;
+}
+
+table,
+th,
+td{
+/*	border:1px solid #000 ;*/
+}
+table {
+	border-collapse:collapse ;
+}
+thead {
+	background: green;
+	color: black;
+}
+thead th {
+	padding: 5px 10px;
+}
+tr {
+	border-bottom: 1px solid #000;
+}
+tbody tr:hover {
+
+	color: #fff;
+	background: black;
+}
+tr:hover a {
+/*	padding: 2px 0 2px 2px;*/
+	text-decoration-line: none;
+	border-color:yellow;
+}
+tbody tr:active {
+	color: red;
+}
+td {
+	padding: 10px;
+}
+a:link {
+/*	text-decoration-line: none;*/
+}
+a {
+	padding: 2px 0 2px 7px;
+/*	ustiga borilganda*/
+ 	color: red;
+ 	border-top: 2px solid rgba(0,255, 255,0);
+ 	border-left:2px solid rgba(0,255, 255,0) ;
+ 	border-bottom: 2px solid rgba(0,255, 255,0);
+}
+a:active {
+/*	bosilganda*/
+	color: yellow;
+
+}
+a:visited {
+/*	kirilganda*/
+
+	text-decoration-line: none;
+	color: red;
+}

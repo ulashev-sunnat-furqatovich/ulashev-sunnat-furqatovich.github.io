@@ -1,0 +1,113 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing:border-box;
+ }
+/*O'zgaruvchi-Varible*/
+
+/* o'zgarivchilar ikki turga bo'linadi 
+1- Global -- barcha selectorlarda ishlatish mumkin
+2- Local -- yaratilgan selectorda ishlatish mumkin
+
+Global o'zgaruvchini yaratish 
+:root {
+	--varName: value;
+}
+
+Local o'zgaruvchini yaratish 
+selectior {
+	--varName: value;
+}
+
+O'zgaruvchi ishlashi uchun  var(--varName) ko'rinishida ishlatiladi
+*/
+/*
+	
+*/
+ :root {
+ 	--facebook-color:#1877f2;
+ 	--telegram-color:#0088cc;
+ 	--btn-shadow: 2px 2px 5px var(--telegram-color );
+ 	--btn-border: 1px solid #1877f2;
+ 	--oq:#ff0;
+ 	--isite:2px 2px 5px rgba(255,255,0,0.5);
+ }
+
+
+
+ body {
+/* 	padding: 5px ;*/
+ }
+
+ /*.btn {
+ 	padding: 12px 16px ;
+ 	border:var(--btn-border);
+ 	cursor: pointer;
+ }
+
+.btn_facebook {
+	--sarq:yellowgreen;
+	color: var(--sarq);
+	background-color: var(--facebook-color);
+	box-shadow: 2px 2px 5px #1877f280;
+}  
+
+.btn_telegram {
+	color: var(--sarq);
+	background-color: var(--telegram-color);
+	box-shadow: var(--btn-shadow);		
+}
+
+.btn:hover {
+	box-shadow: var(--btn-shadow),inset var(--isite);
+	color: var(--oq);
+}*/
+
+.row {
+	width: 100%;
+	height: auto;
+	background-color: #efefef;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.col {
+	width: calc(100% / 4);
+	height: 200px;
+	background-color: var(--telegram-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 500 3em/1.2em;
+
+}
+
+/*max-width:; //berilgan o'lchamga kelganda ishlaydi
+min-width:; //berilgan o'lchamga kelgancha ishlaydi*/
+
+@media screen and (max-width: 780px){
+	.row {
+		flex-wrap: wrap;
+	}
+	.col {
+		background-color: var(--oq);
+		width: calc(100% / 2.5);
+		margin: 2px;
+	}
+
+}
+@media screen and (max-width: 425px){
+
+	.row {
+		flex-wrap: wrap;
+	}
+	.col {
+		background-color: var(--facebook-color);
+		width: 100%;
+		margin: 10px;
+	}
+		.col:nth-child(2) {
+		display: none;
+	}
+}

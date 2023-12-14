@@ -1,0 +1,38 @@
+/*
+	Css da ranglar bilan ishlashda 
+	1-hex rang berish usuli (#fffff),
+	1-rgb () rang berish usuli (rgb(red green blue), rgb(0,255,0)
+	3-rgba () rang berish usuli (rgba (red, green , blue, alpha),
+	rgba (0,0,0,.8))
+	4-rang nomi
+*/
+/*hex rang berish usuli
+   # ff ff ff
+   red green b lue
+*/
+
+
+.rang-1 {
+	color:#ff0;
+}
+.rang-2 {
+	color:rgb( 0,255 ,255) ;
+}
+.rang-3 {
+/*	rgba(red green blue alpha )
+	alpha- sifat darajasi
+	0=0%
+	1=100*/
+	color:rgba(0, 255, 30, 1.0) ;
+}
+.button {
+	color: ;
+	background:rgba(0, 0, 255, 0.3) ;
+	padding: 10px;
+	transition: all 0.5s;
+
+}
+.button:hover {
+	color: #fff;
+	background: rgba(0, 0, 255, 1.0);
+}

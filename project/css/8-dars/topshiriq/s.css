@@ -1,0 +1,12 @@
+h1 {
+	text-shadow:0px 25px 0px black;
+}
+p {
+	text-decoration: dotted overline underline  8px red;
+	line-height: 50px;
+	text-indent: 25px;
+	letter-spacing: 0px;
+/*	text-decoration-style:dotted ;*/
+	text-transform: capitalize;
+
+}

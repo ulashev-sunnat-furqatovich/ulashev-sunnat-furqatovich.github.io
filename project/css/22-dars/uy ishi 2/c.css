@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Reem+Kufi+Fun:wght@500&display=swap");
+:root {
+  --poppins: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("sunset-5536777_1920\ 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login_box {
+  position: relative;
+  backdrop-filter: blur(20px);
+  width: 478px;
+  height: 520px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  box-shadow: inset -15px 15px 50px -28px #fff, inset 15px -15px 50px -28px #000;
+}
+.logo {
+  transform: translateY(50px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1 {
+  color: #fff;
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 65px;
+  width: 100%;
+}
+.inputs span {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inputs input {
+  outline: none;
+  display: inline-block;
+  width: 80%;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+.inputs label {
+  color: #fff;
+  position: absolute;
+  top: -80%;
+  left: 50px;
+}
+.inputs input:focus + label {
+  font-size: 0.7em;
+  left: 105px;
+  top: -100%;
+}
+.btns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #fff;
+}
+.btns span {
+  width: 100%;
+  text-align: center;
+}
+.btns .login_input {
+  font-size: 1.5em;
+  color: #fff;
+  display: inline-block;
+  width: 250px;
+  height: 48px;
+  border: none;
+  border-radius: 50px;
+  background-color: #db5f19;
+}

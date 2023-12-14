@@ -1,0 +1,26 @@
+button {
+/*	width: 100px;*/
+	border: 1px solid rgb(0, 0, 0);
+	border-radius:25px;
+	padding: 15px;
+	background-color: white;
+	transition: all 0.8s;
+}
+.button1:hover ~ .button2{
+	width: 150px;
+	color: white;
+	background-color: blue;
+	border-color: blue;
+}
+.button2:hover ~ .button3{
+	width: 200px;
+	color: white;
+	background-color: blue;
+	border-color: blue;
+}
+/*.button3:hover{
+	width: 200px;
+	color: white;
+	background-color: blue;
+	border-color: blue;*/
+}

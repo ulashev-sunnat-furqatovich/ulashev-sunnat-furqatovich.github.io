@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000ff90;
+}
+.inlogin_box {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.inlogin_box p {
+  font-size: 1.2em;
+  color: #fff;
+}
+.inlogin_box input {
+  padding: 10px;
+  outline: none;
+  width: 90%;
+  height: 50px;
+}
+.inlogin_box input:focus {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+.btn {
+  border: none;
+  background-color: #ffff00;
+}
+.inlogin_box input::placeholder {
+  color: #000;
+  position: absolute;
+  left: 10px;
+}

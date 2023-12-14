@@ -1,0 +1,32 @@
+/*selectorlar- tanlash-> htmldagi elementlarni uchun*/
+
+/*selectorlar - 3taga bo'linadi 
+1-html tegi ->h1
+2-class nomi ->.sinf-1
+3-id nomi ->#kirish
+4-* universal selector*/
+
+/*selectorlar ichida ko'p ishlatiladigan selector class nomi*/
+
+.h2 {
+/*xususiyat-nomi :qiymat;*/
+	color: darkred;
+	background: black;
+	background-size: 100px;
+}
+.sinf-1 {
+	color: green;
+}
+#kirish{
+	color: black;
+}
+
+*{
+	background-color: yellowgreen;
+}
+h5{
+	color: blue;
+}
+h4 {
+	color: dodgerblue;
+}

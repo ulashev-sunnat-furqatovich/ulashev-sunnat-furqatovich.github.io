@@ -1,0 +1,18 @@
+/*
+	1-avlod tanlsh kombinatorlari ( element ichidagi belgilangan elementlarni barchasiga uslub 
+	beradi)  (bo'sh joy'')
+	2-child  bola tanlash kombinattri (element ichhidagi belgilangan element uchun ishlatiladi) (>)
+	3-elementdan keyingi birichi elementga uslub berish uchun (+)
+	4-elementdan keyingi belgilanga elementlarga uslub berish uchun (~)
+	5-bir vaqtnning o'zida barcha elementlarga uslub berish ()
+*/
+
+.itm1 ~ h2,
+.itm1 ~ p
+{
+	color: blue;
+}
+
+h2 {
+/*	color: red;*/
+}

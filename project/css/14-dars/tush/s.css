@@ -1,0 +1,42 @@
+* {
+	margin: 1px;
+	padding: 1px;
+	transition: 0.2s;
+}
+/*Psewdo class va Psewdo elementlar --
+psewdo class(:)--> a:hover
+psewdo elementlar(::)-->a::before
+*/
+
+h2.sinflar :not(em){
+	color: red;
+}
+.elementlar::selection {
+	color: red;
+}
+.box {
+	width: 200px;
+	height: 200px;
+	background-color:red ;
+	position: relative;
+}
+.box::before {
+	content: "" ;
+	border-radius:50px ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.box::after {
+	content: "." ;
+	border-radius:60px ;
+	position: absolute;
+	top: 90px;
+	left: 90px;
+	width: 110px;
+	height: 110px;
+	background-color: darkcyan;
+}

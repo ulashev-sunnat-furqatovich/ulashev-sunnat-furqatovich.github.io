@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.div{
+	margin: 300px;
+	width: 400px;
+	height: 400px;
+	display: flex;
+	background-color: dodgerblue;
+	justify-content: space-between;
+	align-content:space-between;
+	flex-wrap: wrap;
+}
+.item {
+	width:150px;
+	height: 150px;
+	background-color: yellow;
+	display: flex;
+}
+.div2{
+	width: 500px;
+	height: 500px;
+	display: flex;
+	background-color: green;
+	justify-content: space-between;
+	align-content:space-between;
+	flex-wrap: wrap;
+}
+.none {
+	background-color: green;
+}

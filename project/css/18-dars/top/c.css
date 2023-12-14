@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text span {
+	color: radial;
+	position: absolute;
+	padding: 80px 0 50px 30px;
+	display: flex;
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 50%;
+}
+.text span:nth-child(2) {
+	top: 0;
+	right: 0;
+}
+.text span:nth-child(3) {
+	bottom: 0;
+	right: 0;
+}
+.text span:nth-child(1) {
+	bottom: 0;
+	left: 0;
+}
+/**/
+/**/
+/**/
+.sinf_1 {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font: 500 20px/1.2em Arial , sans-serif;
+	z-index: 5;
+}
+.sinf_1::before {
+	content: "";
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	z-index: -4;
+	transition: all 1s;
+}
+.sinf_1::after {
+	content: "";
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	z-index: -4;
+	transition: all 1s;
+}
+.sinf_1 .sinf_2 {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 100px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sinf_1 .sinf_3{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 100px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 180px;
+}
+/**/
+/**/
+/**/
+.sinf_1:hover::before{
+	animation: anim1 5s linear infinite;
+}
+.sinf_1:hover::after{
+	animation: anim1 5s linear reverse infinite;	
+}
+.sinf_1:hover .sinf_2{
+	animation: anim2 5s linear infinite;
+}
+.sinf_1:hover .sinf_3{
+	animation: anim3 5s linear  infinite;	
+}
+.sinf_1:hover span:nth-child(1){	
+	animation-delay: 0.2s;
+}
+.sinf_1:hover .sinf_2:nth-child(2){	
+	animation-delay: 0.4s;
+}
+
+.sinf_1:hover .sinf_3:nth-child(4){	
+	animation-delay: 0.2s;
+}
+.sinf_1:hover .sinf_3:nth-child(5){	
+	animation-delay: 0.4s;
+}
+.sinf_1:hover  text span {
+	animation: anim4 5s linear infinite ;
+}
+/**/
+/**/
+/**/
+@keyframes anim1 {
+	0% 100%{
+		left: 0;
+		top: 0;
+	}
+	25% {
+		left: calc(100% - 200px);
+		top: 0;
+	}
+	50% {
+		left: calc(100% - 200px);
+		top: calc(100% - 200px);
+	}
+	75% {
+		left: 0;
+		top: calc(100% - 200px);
+	}
+	100% {
+		filter: hue-rotate(3600deg);
+	}
+}
+@keyframes anim2 {
+	0% 100%{
+		left: 0;
+		top: 0;
+	}
+	25% {
+		left: 180px;
+		top: 180px;
+	}
+	50% {
+		left:180px;
+		top: 0;
+	}
+	75% {
+		left: 0;
+		top: 180px;
+	}
+	100% {
+		filter: hue-rotate(3600deg);
+	}
+	  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+@keyframes anim3 {
+	0% 100%{
+		left: 180px;
+		top: 0;
+	}
+	25% {
+		left: 0;
+		top:180px;
+	}
+	50% {
+		left:0;
+		top: 0;
+	}
+	75% {
+		left: 180px;
+		top: 180px;
+	}
+	100% {
+		filter: hue-rotate(3600deg);
+	}
+	0%   {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	100% {background-color: green;}
+	
+}
+@keyframes anim4 {
+	0% {
+		transform: rotate(180deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+}
+

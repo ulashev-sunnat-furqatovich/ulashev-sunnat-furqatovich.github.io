@@ -1,0 +1,68 @@
+	
+
+button {
+	margin:0 0 0 10%;
+	color: #fff;
+	transition: all 0.5s linear;
+}
+
+.button1 {
+	width: 120px;
+	height: 60px;
+	background-color: #0082fc;
+	border-radius: 10px;
+	border-color:  #0082fc;
+	cursor: pointer;
+	background-image: url("refresh.png");
+	background-size: 45px;
+	background-position: top -75px right 0;
+	background-repeat: no-repeat;
+
+}
+.button1:hover {
+	padding: 0 35px 0 0;
+	width: 190px;
+	background-color:  #0082f1;
+	border-radius:10px;
+	text-shadow: 3px 3px 2px white;
+	background-position: center right;
+	}
+.button2 {
+	width: 120px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #009578;
+	cursor: pointer;
+	background-image: url("download.png");
+	background-size: 35px;
+	background-position: bottom -105px right;
+	background-repeat: no-repeat;
+}
+.button2:hover {
+	width: 150px;
+	padding: 0 35px 0 0;
+	text-shadow:3px 3px 2px   #00ff78;
+	border-color:#009578;
+	background-position: center right;
+	}
+.button3 {
+	width: 120px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #ff0099;
+	border-color: #ff0099;
+	cursor: pointer;
+	background-position: center right -150px;
+	background-image: url("plus.png");
+	background-size: 35px;
+	background-color: #ff2255;
+	background-repeat: no-repeat;
+}
+.button3:hover {
+	text-shadow:  5px 5px 2px #950f20;
+	border-color: #ff0099;
+	width: 160px;
+	padding: 0 35px 0 0;
+	border-radius: 10px;
+	background-position: center right 5px;
+}

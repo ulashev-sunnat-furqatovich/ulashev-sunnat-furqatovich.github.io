@@ -1,0 +1,44 @@
+/*Animatsiyalar bilan ishlashda kerak bo'ladigan xususuyatlar
+animation-name: ;//animatsiyaaga nom berish 
+animation-direction: ;//animatsiya yo'nalishi
+animation-delay: ;//animatsiya boshlanishidan oldin qancha vaqt kutib turish
+animation-duration: ;//animatsiya qancha vaqt davom etishini belgilash
+animation-iteration-count: ;// animatsiya necha marta bo'lishi
+animation-fill-mode: ;//animatsiya qiymatini saqlab qolish uchun
+animation-timing-function: ;//animatsiya tezligini o'zgartirish
+
+animatsiya boshlash uchun
+
+@keyframes name {
+	from (color;red)
+	to (color;blue)
+}
+
+*/
+p {
+	animation-name:rang ;
+	animation-duration: 3s;
+/*	animation-iteration-count: 3;*/
+/*	animation-delay: 3s;*/
+	margin: 10px;
+	animation-direction:alternate-reverse ;
+	animation-timing-function: linear;
+	animation-fill-mode: normal;
+	animation-iteration-count: infinite;
+}
+@keyframes rang{
+	from {color:red;}
+	to {color:blue;}
+	0% ,100%{
+		margin: 10px;
+	}
+
+	50%{
+		margin:70px ;
+	}
+	79%{
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+	
+}

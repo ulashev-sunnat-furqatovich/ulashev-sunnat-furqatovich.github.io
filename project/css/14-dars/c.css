@@ -1,0 +1,54 @@
+/*psewdo class
+a {
+	color: red;
+}
+unvisited link 
+a:link {
+  color: blue;
+}
+
+ visited link 
+a:visited {
+  color: #F55F00;
+}
+
+ mouse over link 
+a:hover {
+  color:blue;
+}
+
+ selected link 
+a:active {
+  color: yellow;
+  transition: 1s;
+}*/
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+:root {
+  --blue: #ccc;
+}
+p {
+  color: var(--blue);
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+.sinf1::befor {
+  content: "lorem  ";
+  display: inline;
+  position: absolutes;
+  right: 0;
+  widows: 100px;
+  height: 50px;
+  background-color: blue;
+}
+.sinf1::after {
+  content: url(smiley.gif);
+}

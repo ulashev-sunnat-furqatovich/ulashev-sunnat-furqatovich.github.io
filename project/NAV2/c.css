@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Reem+Kufi+Fun:wght@500&display=swap");
+:root {
+  --poppins: "Poppins", sans-serif;
+  --colorbtn: #00eaff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background-image: url(orion-nebula-11107_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.menu {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  background-color: black;
+  font-family: var(--poppins);
+}
+.logo {
+  transform: translate(10px, 0);
+  color: white;
+  font-size: 30px;
+}
+.logo span {
+  color: blue;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.menu ul li a:hover {
+  color: blue;
+}
+.dropdown,
+.dropdown2 {
+  display: block;
+  position: absolute;
+  background-color: black;
+  transition: all 0.3s;
+}
+.dropdown2 {
+  display: none;
+  top: 0;
+  left: 300px;
+}
+.dropdown {
+  display: none;
+}
+.dropdown ul,
+.dropdown2 ul {
+  display: block;
+  margin: 10px;
+}
+.dropdown ul li,
+.dropdown2 ul li {
+  color: #fff;
+  width: 100px;
+  padding: 10px;
+}
+.menu ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.menu ul li:hover .dropdown ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .dropdown ul li {
+  width: 150px;
+  padding: 10px;
+}
+.dropdown ul li:hover .dropdown2 {
+  display: block;
+  position: absolute;
+  left: 170px;
+}
+.btns {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5vh;
+}
+.login_btn {
+  cursor: pointer;
+  padding: 4px 10px;
+  border: 1px solid var(--colorbtn);
+  color: var(--colorbtn);
+  background: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.login_btn:hover {
+  background-color: var(--colorbtn);
+  text-shadow: 0 0 1px #000;
+  color: #000;
+}
+.search_input {
+  display: inline-block;
+  padding: 1px 5px 4px 20px;
+  color: #fff;
+  outline: #00ffff;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #0000ff;
+  width: auto;
+}
+.search_input input {
+  outline: #00ffff;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.search_input button {
+  cursor: pointer;
+  transform: translate(-5px, 6px);
+  width: 20px;
+  height: 20px;
+  background: none;
+  border-radius: 20px;
+  border: none;
+  background-image: url(search.png);
+  background-size: cover;
+}
+.aboute_me {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(off_3.png);
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 765px) {
+  .links_board {
+    background: #000;
+    width: 250px;
+    height: 70vh;
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}

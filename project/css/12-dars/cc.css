@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+/*static//da tomonlar ishlamaydi*/
+
+p {
+	width: 200px;
+	padding: 12px 16px;
+	color: #fff;
+	margin: 10px;
+}
+
+.position1 {
+	position: static;
+	background-color:red;
+}
+.position1:hover .position2 {
+	background-color: green;
+	position: absolute;
+	top: 35px;
+	right: 72px;
+
+}
+.position2 {
+	background-color: green;
+	position: relative;
+	top: -35px;
+	right: -72px;
+}
+.position3 {
+	background-color: blue;
+	position:absolute ;
+	top: 70px;
+	right: 1004px;
+}
+.position4 {
+	color: black;
+	background-color: yellow;
+	position: absolute;
+	z-index: 5;
+	top: 53px;
+	right:1095px ;
+
+
+}
+.position5 {
+	position: fixed;
+	top: 39px;
+	right: 1170px;
+	color: black;
+	background-color: aqua;
+}

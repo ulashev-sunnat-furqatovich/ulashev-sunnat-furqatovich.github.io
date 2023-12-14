@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.h1 {
+	color: #fff;
+	line-height: 3;
+	font-size: 2em;
+	border-radius:100px ;
+	position: relative;
+	width: 168px;
+	height: 168px;
+	padding: 30px 30px;
+	background-color: green;
+	display: block;
+}
+
+.h1::before {
+	content: "BEFORE";
+	line-height: 3;
+	padding: 30px;
+	border-radius:100px ;
+	position: absolute;
+	left: 168px;
+	top: 0;
+	width: 110px;
+	height: 110px;
+	background-color: red;
+	display: inline-block;
+	color: #fff;
+}
+.h1::after {
+	content: "AFTER";
+	padding: 30px;
+	border-radius:100px ;
+	position: relative;
+	left: 311px;
+	top: -125px;
+	width: 110px;
+	height: 110px;
+	background-color: blue;
+	display: inline-block;
+	color: #fff;
+}
+
+
