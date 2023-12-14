@@ -17,6 +17,7 @@ body {
 .menu {
   padding: 10px;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 5%;
   background-color: red;
