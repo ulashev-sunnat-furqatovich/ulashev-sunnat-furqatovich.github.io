@@ -119,7 +119,7 @@ body {
 .social-link svg:hover circle,
 svg {
   color: #d18c4b;
-  transform: rotate(1deg) scale(1.01);
+  transform: rotate(0.1deg) scale(1.01);
 }
 
 .login_page_board .right .login_board {
