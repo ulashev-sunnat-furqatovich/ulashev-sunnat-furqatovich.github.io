@@ -11,10 +11,7 @@ body {
   background: url(bg.svg) no-repeat;
   background-size: cover;
 }
-.bcd_body {
-  width: 1294px;
-  height: 813px;
-}
+
 .bosh {
   font-family: "Bebas Neue", sans-serif;
   font-family: "Iceland", sans-serif;
