@@ -10,6 +10,7 @@ body {
   height: 100vh;
   background: url(bg.svg) no-repeat;
   background-size: cover;
+  position: relative;
 }
 .bcd_body {
   width: 1294px;
