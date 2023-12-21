@@ -8,6 +8,8 @@
 body {
   width: 100%;
   height: 100vh;
+  background: url(bg.svg) no-repeat;
+  background-size: cover;
 }
 .bcd_body {
   width: 1294px;
