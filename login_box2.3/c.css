@@ -10,13 +10,10 @@ body {
   height: 100vh;
   background: url(bg.svg) no-repeat;
   background-size: cover;
-  position: relative;
 }
 .bcd_body {
   width: 1294px;
   height: 813px;
-  background: url(bg.svg) no-repeat;
-  background-size: cover;
 }
 .bosh {
   font-family: "Bebas Neue", sans-serif;
