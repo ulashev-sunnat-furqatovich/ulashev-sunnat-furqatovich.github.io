@@ -41,7 +41,7 @@ body {
 .bcd_icon {
   position: absolute;
   top: 50px;
-  left: 70px;
+  left: calc(50% - 150px / 2);
 }
 .bosh .box {
   width: 90%;
