@@ -160,7 +160,7 @@ body {
 }
 @media screen and (max-width: 425px) {
   .bosh {
-    width: 400px;
+    width: 100%;
     height: 350px;
     position: relative;
     opacity: 1;
