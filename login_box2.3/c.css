@@ -100,7 +100,7 @@ body {
 }
 .bosh .inputs input:checked,
 .bosh .inputs input:focus {
-  opacity: 1;
+  opacity: 2;
 }
 .bosh .forgot {
   text-align: right;
