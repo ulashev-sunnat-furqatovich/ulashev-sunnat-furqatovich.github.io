@@ -98,6 +98,10 @@ body {
   );
   backdrop-filter: blur(30px);
 }
+.bosh .inputs input:checked,
+.bosh .inputs input:focus {
+  opacity: 100%;
+}
 .bosh .forgot {
   text-align: right;
   color: #fff;
