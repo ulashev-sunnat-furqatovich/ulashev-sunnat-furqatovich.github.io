@@ -102,11 +102,7 @@ body {
 .bosh .inputs input:focus {
   opacity: 2;
 }
-.ininput {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 .bosh .forgot {
   text-align: right;
   color: #fff;
