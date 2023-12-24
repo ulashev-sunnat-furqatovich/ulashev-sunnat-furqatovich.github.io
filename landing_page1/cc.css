@@ -350,7 +350,7 @@ body {
   text-align: right;
   display: flex;
   justify-content: right;
-  /* flex-direction: column; */
+
   flex-wrap: wrap;
   gap: 40px;
 }
