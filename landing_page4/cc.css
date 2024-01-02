@@ -291,16 +291,6 @@ body {
   height: 24px;
   padding: 2px;
 }
-.aboute_us .container .texts_box .mimibox::before {
-  content: "";
-  background: url("img/Ellipse\ 2\ \(2\).png");
-  background-size: 24px;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: -5px;
-  left: -6.2px;
-}
 .aboute_us .container .texts_box .mimibox p {
   color: #4f4f4f;
   font-size: 14px;
@@ -310,6 +300,13 @@ body {
   color: #95b2d8;
   font-size: 14px;
   font-weight: 700;
+  width: 24px;
+  height: 24px;
+  background: url("img/Ellipse\ 2\ \(2\).png");
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contacts {
   width: 100%;
