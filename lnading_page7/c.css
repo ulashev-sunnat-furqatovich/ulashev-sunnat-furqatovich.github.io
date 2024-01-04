@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iceland&family=Montserrat:wght@100&family=Open+Sans&family=Oswald:wght@200&family=Poppins:wght@400;600;800;900&family=Reem+Kufi+Fun:wght@500&family=Vampiro+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .helpbtn {
   width: 170px;
