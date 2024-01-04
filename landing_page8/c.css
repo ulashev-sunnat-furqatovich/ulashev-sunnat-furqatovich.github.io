@@ -349,6 +349,8 @@
   border-radius: 61px;
   border: 3px solid #9fdea9;
   background-color: #9fdea9;
+  outline: none;
+  color: #ffffff;
 }
 .contactus .container .box .inputbox .submit {
   width: 168px;

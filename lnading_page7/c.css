@@ -195,7 +195,6 @@
   font-weight: 800;
   line-height: 100%;
 }
-
 .services .container .groups {
   z-index: 1984;
   width: 1700px;
@@ -217,7 +216,7 @@
   box-shadow: 0px 4px 50px 0px rgba(77, 107, 185, 0.15);
 }
 .services .container .groups .mimigrounp .text {
-  padding: 30px;
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -267,7 +266,6 @@
   text-align: center;
   margin: 50px;
 }
-
 .contactus .container .box {
   display: flex;
   flex-wrap: wrap;
@@ -291,6 +289,8 @@
   border-radius: 61px;
   border: 3px solid #9fb1de;
   background-color: #9fb1de;
+  outline: none;
+  color: #fff;
 }
 .contactus .container .box .inputbox .submit {
   width: 168px;

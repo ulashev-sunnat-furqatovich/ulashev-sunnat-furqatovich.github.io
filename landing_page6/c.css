@@ -108,6 +108,8 @@
   height: 56px;
   border-radius: 61px;
   background: #94d3ea;
+  outline: none;
+  color: #fff;
 }
 .contact .container .input button {
   outline: none;
