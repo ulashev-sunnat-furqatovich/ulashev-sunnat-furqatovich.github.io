@@ -40,6 +40,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url("img/Frame\ 1\ \(1\).png") no-repeat;
+  background-size: 100% 100%;
 }
 .top .container {
   width: 1903px;
@@ -47,7 +49,6 @@ body {
   display: flex;
   align-items: center;
   padding: 181px 0 182px 352px;
-  background: url("img/Group\ 566.png");
 }
 .top .container .left_text {
   display: flex;
