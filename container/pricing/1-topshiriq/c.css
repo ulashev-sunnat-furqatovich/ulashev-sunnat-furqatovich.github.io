@@ -23,6 +23,7 @@
   height: 36px;
   background: transparent;
   font: var(--btnfont);
+  text-transform: uppercase;
 }
 * {
   margin: 0;
