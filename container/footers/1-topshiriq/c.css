@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
 :root {
   --white: #fff;
   --textcolor: #363940;
@@ -68,7 +69,7 @@
   display: flex;
   align-items: center;
 }
-.desc a {
+.desc .inlink {
   margin-left: 5px;
   font: var(--linkfont);
   color: var(--linkcolor);
