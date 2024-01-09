@@ -80,6 +80,9 @@
 .desctext {
   width: 220px;
 }
+.form {
+  display: flex;
+}
 .input {
   height: 46px;
   border-radius: 4px;
@@ -90,6 +93,9 @@
   margin-right: 10px;
   border: 1px solid var(--neutralcolor);
   font: var(--dwscfont);
+}
+.email::placeholder {
+  color: #95a1bb;
 }
 .submit {
   width: 68px;

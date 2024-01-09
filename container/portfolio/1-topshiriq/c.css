@@ -34,7 +34,6 @@
 .toptitle {
   font: var(--title_font);
   color: var(--textdark);
-  width: 410px;
 }
 .text {
   margin-top: 20px;

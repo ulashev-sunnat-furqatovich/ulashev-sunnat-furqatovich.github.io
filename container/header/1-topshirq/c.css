@@ -2,6 +2,9 @@
   max-width: 934px;
   margin: 0 auto;
 }
+.btn {
+  cursor: pointer;
+}
 * {
   margin: 0;
   padding: 0;

@@ -3,6 +3,7 @@
   --textcolor: #363940;
   --neutralcolor: #95a1bb;
   --textlite: #fff;
+  --linkcolor: #6e38f7;
   --font: "Rubik", sans-serif;
   --link_font: 500 12px/20px var(--font);
   --title_font: 500 36px/43px var(--font);
@@ -68,4 +69,6 @@ h1.title {
 }
 .link {
   margin-top: 20px;
+  text-transform: uppercase;
+  color: var(--linkcolor);
 }
